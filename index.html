@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='css/style.css') }}">
+    <title>Palomitas Loca</title>
+</head>
+
+  <!-- Columna izquierda -->
+  <div class="cuadraditoss">
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+    <div class="cuadradito"></div>
+  </div>
+ 
+     
+        
+  <div class="contenedor">
+    <h2>MOVIES</h2>
+    <h2>SERIES</h2>
+
+    <div class="buttons">
+      <button><a href="{{ url_for('verpeliculas')}}"> Ver peliculas</a></button>
+      <button> <a href="{{ url_for('verpersonas')}}">Ver personas</a></button>
+      <button> <a href="{{ url_for('entrarensistema')}}"> Entrar en sistema</a></button>
+    </div>
+  </div>
+
+
+ 
+  </div>
+</body>
+</html>
+
+<body>
+  
+
+  
+  <div class="popcorn">
+    <img src="{{ url_for('static', filename='img/pochoclo.png ') }}" alt="Caja de pochoclos">
+  </div>
+
+  
+  <div class="camara">
+     <img src="{{ url_for('static', filename='img/Group 1.png') }}" alt="Cámara de cine">
+  </div>
+</body>
+</html>
+
+<div class="corte">
+    <img src="{{ url_for('static', filename='img/Group 4.png') }}"  alt="corte" width="150px" height="170px">
+  </div>
+</body>
+</html>
